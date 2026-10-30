@@ -1,0 +1,38 @@
+Audio Report AI — Third-party notices
+
+This app includes or uses the following third-party components and model
+weights. Full license texts are included next to this notice.
+
+1. LFM3-1.7B QAD Q4_0 GGUF
+   Copyright Liquid AI, Inc.
+   Model card: https://huggingface.co/LiquidAI/LFM3-1.7B
+   License: LFM Open License v1.0 (see LFM-Open-License-1.0.txt)
+   The LFM license permits use, reproduction, and distribution subject to
+   its conditions, including its commercial-use threshold. This app does not
+   claim any endorsement by Liquid AI. "LFM" and "Liquid AI" are trademarks
+   of their respective owner.
+
+2. Whisper tiny GGML model (ggml-tiny.bin)
+   Copyright OpenAI.
+   Model card: https://huggingface.co/openai/whisper-tiny
+   License: MIT (see Whisper-MIT.txt)
+
+3. whisper.cpp
+   Copyright Georgi Gerganov and contributors.
+   https://github.com/ggerganov/whisper.cpp
+   License: MIT (see whisper.cpp-MIT.txt)
+
+4. llama.cpp
+   Copyright Georgi Gerganov and contributors.
+   https://github.com/ggerganov/llama.cpp
+   License: MIT (see llama.cpp-MIT.txt)
+
+5. AndroidX, Jetpack Compose, Room, and Kotlin
+   Copyright Google LLC and JetBrains s.r.o.
+   Licenses: Apache License 2.0 (see Apache-2.0.txt) and applicable
+   Kotlin/third-party notices included in the app bundle.
+
+Model weights are not authored by the Audio Report AI project. Users and
+distributors are responsible for complying with the model licenses, including
+the LFM commercial-use threshold. This app is a documentation aid, not a
+medical device.
