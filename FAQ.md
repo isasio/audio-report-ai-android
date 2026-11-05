@@ -41,7 +41,7 @@ You have an existing build signed with a different key, for example:
 Uninstall the existing app, then install the new APK. Uninstalling removes local
 sessions, transcripts, reports, and imported models.
 
-## Play Protect warns about the APK
+## Android warns about the APK
 
 GitHub builds are signed by the project and distributed only through GitHub
 Releases. Android may show a standard sideload warning. Only install builds from
