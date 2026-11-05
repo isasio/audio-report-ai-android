@@ -69,6 +69,21 @@ If a Google Play build or an older sideload build signed with a different key is
 already installed, uninstall it first. Android will otherwise reject the update,
 and uninstalling removes that app's local data.
 
+## Verify the download
+
+```bash
+sha256sum -c SHA256SUMS.txt
+```
+
+The current APK SHA-256 is also shown at the top of this page and in the release
+notes.
+
+## Troubleshooting
+
+See [FAQ.md](FAQ.md) for installation/signature errors, storage requirements,
+slow first launch, transcription quality, checksum verification, data deletion,
+and support instructions.
+
 ## Privacy
 
 - The app has **no `INTERNET` permission**. It cannot send audio, transcripts,
@@ -108,4 +123,8 @@ This public repository only distributes the Android build and its user-facing
 documentation. Source code, signing keys, and model files are not stored here.
 The APK and its checksums are published as GitHub Release assets.
 
-For support, open an issue in this repository.
+For support, open an issue in this repository:
+
+https://github.com/isasio/audio-report-ai-android/issues
+
+Never attach audio, transcripts, reports, patient names, or other clinical data.

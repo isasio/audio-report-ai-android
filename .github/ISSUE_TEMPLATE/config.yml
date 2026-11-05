@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the latest APK
+    url: https://github.com/isasio/audio-report-ai-android/releases/latest
+    about: Get the current bundled offline build and checksums.
+  - name: Read the FAQ
+    url: https://github.com/isasio/audio-report-ai-android/blob/master/FAQ.md
+    about: Installation, storage, model quality, privacy, and troubleshooting.
