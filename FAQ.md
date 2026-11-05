@@ -4,7 +4,7 @@
 
 - **GitHub bundled APK:** self-contained, includes LFM3 and whisper tiny. Large
   download and first-launch copy.
-- **Google Play build:** small model-less app; import LFM3 and whisper models
+- **Google Play build (when available):** small model-less app; import LFM3 and whisper models
   from device storage after installing.
 
 Do not mix builds signed with different keys. Uninstall the old app before
