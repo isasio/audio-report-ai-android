@@ -4,15 +4,31 @@ All notable user-visible changes are recorded here.
 
 ## [Unreleased]
 
+### Added
+
+- PDF export for reports and transcripts: A4 multipage layout, metadata,
+  draft/approved banner, sections, evidence, page numbers, and SAF destination.
+
+### Changed
+
+- Distribution is GitHub Releases only; Play Store, AAB, Play Asset Delivery, and
+  Play App Signing were removed from the release process.
+- Reworked the LFM3 prompt into explicit mode, length, section-content, and
+  schema blocks so writing modes and report lengths affect generated output.
+- Added per-section meaning to prevent task/transcript meta commentary.
+- Added an effective-prompt preview in the report screen.
+- Increased short/normal/long body and output budgets; extensive was capped at
+  1,000 characters because llama.cpp rejected a 1,400-character repetition.
+- Removed the fixed 15-word section limit that conflicted with long/extensive
+  modes.
+
 ### Planned
 
 - Physical-device M0 validation and documented device requirements
 - Recommended whisper model for Spanish quality
 - Audio focus/interruption handling
-- Report editing, regeneration controls, and PDF export
+- Report editing and regeneration controls
 - Release automation and CI checks
-- Play internal/closed testing
-- Play Asset Delivery evaluation for bundled models
 
 ## [0.1.0] — 2026-10-30
 
@@ -34,14 +50,13 @@ All notable user-visible changes are recorded here.
 - Self-contained GitHub APK with LFM3 and whisper tiny, plus first-launch model
   installation
 - In-app model/third-party license notices
-- Model-less Play AAB upload kit
 
 ### Known limitations
 
 - whisper tiny has limited Spanish accuracy; larger models can be imported
 - Physical-device M0 benchmarks are incomplete
 - Audio focus/interruption handling is not implemented
-- Report editing and PDF export are not implemented
+- Report editing is not implemented
 - The ASR engine decision remains open
 - LFM license/distribution and clinical reviews remain open
 - No auto-update; the app has no `INTERNET` permission

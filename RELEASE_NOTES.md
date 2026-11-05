@@ -34,6 +34,5 @@ explicitly export through the system file picker.
 - LFM3 is distributed under the LFM Open License v1.0, including its
   commercial-use threshold. See `THIRD_PARTY_NOTICES.txt` and the license files
   in `LICENSES/`.
-- The APK is signed with the project upload key, not Google Play's app-signing
-  key. Uninstall any Play or older sideload build signed with a different key
-  before installing this APK.
+- The APK is signed with the project GitHub release key. Uninstall any older
+  build signed with a different key before installing this APK.

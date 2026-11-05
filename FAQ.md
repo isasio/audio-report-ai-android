@@ -3,9 +3,7 @@
 ## Which build should I install?
 
 - **GitHub bundled APK:** self-contained, includes LFM3 and whisper tiny. Large
-  download and first-launch copy.
-- **Google Play build (when available):** small model-less app; import LFM3 and whisper models
-  from device storage after installing.
+  download and first-launch copy. This is the only distribution channel.
 
 Do not mix builds signed with different keys. Uninstall the old app before
 switching channels; this removes its local sessions and reports.
@@ -38,7 +36,6 @@ on and the app foregrounded. If it fails, free space and tap Retry.
 You have an existing build signed with a different key, for example:
 
 - a previous GitHub APK signed with another key;
-- a Google Play build;
 - a debug build.
 
 Uninstall the existing app, then install the new APK. Uninstalling removes local
@@ -46,9 +43,9 @@ sessions, transcripts, reports, and imported models.
 
 ## Play Protect warns about the APK
 
-GitHub builds are signed by the project, not distributed through Google Play.
-Android may show a standard sideload warning. Only install builds from the
-official release page:
+GitHub builds are signed by the project and distributed only through GitHub
+Releases. Android may show a standard sideload warning. Only install builds from
+the official release page:
 
 https://github.com/isasio/audio-report-ai-android/releases
 
@@ -85,8 +82,7 @@ A larger model increases storage use and slows transcription.
 ## Can the app update itself?
 
 No. The app has no `INTERNET` permission, so it cannot check for or download
-updates. Download new releases manually from GitHub or install through Google
-Play when the Play track is available.
+updates. Download new releases manually from the GitHub Releases page.
 
 ## Does the app send my data anywhere?
 
@@ -122,8 +118,7 @@ Open an issue here:
 
 https://github.com/isasio/audio-report-ai-android/issues
 
-Include the app version, Android version, device model, steps to reproduce, and
-whether you used the GitHub or Play build.
+Include the app version, Android version, device model, and steps to reproduce.
 
 **Never attach audio, transcripts, reports, patient names, or other clinical
 data.** Use synthetic examples. For sensitive details, describe the problem

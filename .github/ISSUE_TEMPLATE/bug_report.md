@@ -13,7 +13,7 @@ data. Use synthetic examples and describe the problem without content.
 
 **App version and build**
 - Version:
-- GitHub APK or Google Play:
+- GitHub release APK:
 - APK SHA-256 (if known):
 
 **Device**

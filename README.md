@@ -82,9 +82,9 @@ Synthetic demo data; no patient information.
 3. Open the app and wait for the one-time model preparation screen.
 4. Create a session, then record or import audio.
 
-If a Google Play build or an older sideload build signed with a different key is
-already installed, uninstall it first. Android will otherwise reject the update,
-and uninstalling removes that app's local data.
+If an older build signed with a different key is already installed, uninstall it
+first. Android will otherwise reject the update, and uninstalling removes that
+app's local data.
 
 ## Verify the download
 
