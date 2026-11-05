@@ -84,9 +84,7 @@ See [PRIVACY.md](PRIVACY.md) for details.
 
 ## Important limitations
 
-Audio Report AI is a **documentation aid, not a medical device**. It does not
-diagnose, treat, cure, or prevent any condition and does not replace
-professional judgement. Generated reports are drafts and must be reviewed,
+Generated reports are drafts and must be reviewed,
 corrected, and explicitly approved by a qualified person before use.
 
 This is a 0.1.0 build. PDF export, richer report editing, and the final ASR
