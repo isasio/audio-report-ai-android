@@ -6,6 +6,11 @@ local LFM3 model.
 
 **No cloud. No account. No `INTERNET` permission.**
 
+![Audio Report AI feature graphic](assets/feature-graphic-1024x500.png)
+
+- Website: https://isasio.github.io/audio-report-ai-android/
+- Privacy policy: https://isasio.github.io/audio-report-ai-android/privacy.html
+
 ## Download
 
 **[Download the latest APK](https://github.com/isasio/audio-report-ai-android/releases/latest)**
@@ -53,6 +58,18 @@ internet.
 The bundled whisper model is the small **tiny** model. Transcription quality is
 limited, especially for Spanish. You can import a larger whisper.cpp model from
 device storage for better quality.
+
+## Screenshots
+
+Synthetic demo data; no patient information.
+
+| Sessions | Transcript |
+| --- | --- |
+| ![Session list](assets/screenshots/01-sessions.png) | ![Transcript review](assets/screenshots/02-transcript.png) |
+
+| Report settings | Report evidence |
+| --- | --- |
+| ![Report controls](assets/screenshots/03-report.png) | ![Report evidence](assets/screenshots/04-report-evidence.png) |
 
 ## Requirements and installation
 

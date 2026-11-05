@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audio Report AI for Android — offline transcription and reports</title>
+  <meta name="description" content="Local-first Android app for on-device transcription, transcript review, and LFM3 report drafting. No cloud, no account, no INTERNET permission.">
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #17212b; background: #f7fafc; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    header { background: linear-gradient(135deg, #081e2e, #0f766e); color: white; padding: 44px 0 40px; }
+    .hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+    .hero img { width: 112px; height: 112px; border-radius: 24px; box-shadow: 0 16px 40px rgba(0,0,0,.28); }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.02em; }
+    .tagline { margin: 0; font-size: 1.15rem; color: #ccfbf1; max-width: 650px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
+    .badge { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); border-radius: 999px; padding: 5px 11px; font-size: .86rem; }
+    .hero-actions { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .button { display: inline-block; background: #2dd4bf; color: #062f35; text-decoration: none; padding: 13px 20px; border-radius: 9px; font-weight: 750; }
+    .button.secondary { background: transparent; color: white; border: 1px solid rgba(255,255,255,.5); }
+    .sha { color: #a7f3d0; font-size: .8rem; overflow-wrap: anywhere; margin-top: 14px; }
+    main { padding: 38px 0 28px; }
+    section { margin: 0 0 40px; }
+    h2 { color: #083344; font-size: 1.65rem; margin: 0 0 14px; }
+    h3 { color: #0b4f5c; margin-bottom: 6px; }
+    p { margin: 0 0 12px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .card { background: white; border: 1px solid #d7e3e8; border-radius: 12px; padding: 18px; }
+    .card p { margin-bottom: 0; color: #3d4b56; }
+    .shots { display: flex; gap: 14px; overflow-x: auto; padding: 4px 0 14px; }
+    .shots img { width: 240px; height: auto; border-radius: 16px; border: 1px solid #d7e3e8; box-shadow: 0 8px 24px rgba(8,30,46,.10); flex: 0 0 auto; background: white; }
+    .steps { padding-left: 1.35rem; }
+    .steps li { margin: 0 0 8px; }
+    .notice { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px; padding: 14px 16px; }
+    .muted { color: #52606d; font-size: .94rem; }
+    code { background: #e8eef2; border-radius: 4px; padding: 2px 5px; overflow-wrap: anywhere; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #d7e3e8; padding: 26px 0 44px; color: #52606d; font-size: .92rem; }
+    footer a { margin-right: 14px; white-space: nowrap; }
+    @media (max-width: 600px) { header { padding-top: 30px; } .hero img { width: 84px; height: 84px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero">
+      <img src="assets/icon-512.png" alt="Audio Report AI app icon">
+      <div>
+        <h1>Audio Report AI</h1>
+        <p class="tagline">Record or import a conversation, transcribe it on your device, review the transcript, and draft structured reports with LFM3. No cloud.</p>
+        <div class="badges">
+          <span class="badge">Android 10+</span>
+          <span class="badge">No INTERNET permission</span>
+          <span class="badge">No account</span>
+          <span class="badge">LFM3 on-device</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="https://github.com/isasio/audio-report-ai-android/releases/latest">Download APK</a>
+          <a class="button secondary" href="https://github.com/isasio/audio-report-ai-android/releases/latest">Release notes &amp; checksums</a>
+        </div>
+        <p class="sha">v0.1.0 · ~1.1 GB · SHA-256: 13da879f0af10e9a850100e59cb421869a99818c8a30daabe4c1fe544a0bdcac</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>What it does</h2>
+      <div class="grid">
+        <div class="card"><h3>Record or import</h3><p>Record audio with a visible foreground-service notification, or import MP3, M4A/AAC, WAV, and other supported files.</p></div>
+        <div class="card"><h3>Transcribe on-device</h3><p>whisper.cpp runs locally. Audio is normalised to 16 kHz mono WAV and never uploaded.</p></div>
+        <div class="card"><h3>Review the transcript</h3><p>Edit segments, keep the original text, mark review status, and assign speaker names and roles manually.</p></div>
+        <div class="card"><h3>Draft a report</h3><p>LFM3 generates a structured draft with per-section evidence links. Choose short, normal, long, or extensive output.</p></div>
+        <div class="card"><h3>Use writing modes</h3><p>Formal, clinical, executive brief, veterinary SOAP, and saved custom modes shape tone and structure.</p></div>
+        <div class="card"><h3>Approve explicitly</h3><p>Reports stay drafts until a human reviews the evidence and approves them. Nothing is auto-approved.</p></div>
+        <div class="card"><h3>Export when you choose</h3><p>Copy or export transcripts and reports as TXT or JSON through the Android system file picker.</p></div>
+        <div class="card"><h3>Keep it local</h3><p>No account, ads, analytics, telemetry, or cloud. Data stays in app-private storage unless you export it.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Screenshots</h2>
+      <p class="muted">Synthetic demo data; no patient information.</p>
+      <div class="shots">
+        <img src="assets/screenshots/01-sessions.png" alt="Session list with a demo consultation">
+        <img src="assets/screenshots/02-transcript.png" alt="Transcript review with speaker labels">
+        <img src="assets/screenshots/03-report.png" alt="Report mode and length controls">
+        <img src="assets/screenshots/04-report-evidence.png" alt="Report sections with transcript evidence">
+      </div>
+    </section>
+
+    <section>
+      <h2>Download and install</h2>
+      <p><a class="button" href="https://github.com/isasio/audio-report-ai-android/releases/latest">Download the latest APK from GitHub</a></p>
+      <ol class="steps">
+        <li>Download the ~1.1 GB APK on the Android device.</li>
+        <li>Allow installation from your browser or file manager when prompted.</li>
+        <li>Open the app and wait for the one-time model preparation screen.</li>
+        <li>Create a session, then record or import audio.</li>
+      </ol>
+      <p class="notice">Allow about <strong>3 GB free storage</strong>: the APK plus the first-launch copy of the bundled LFM3 and whisper tiny models. If a Play or older sideload build with a different signing key is installed, uninstall it first.</p>
+    </section>
+
+    <section>
+      <h2>Bundled models</h2>
+      <div class="grid">
+        <div class="card"><h3>LFM3-1.7B QAD Q4_0</h3><p>~1.05 GB GGUF report model, run locally through llama.cpp. The app does not train or fine-tune the model.</p></div>
+        <div class="card"><h3>whisper tiny</h3><p>~77 MB transcription model. It favours size and speed; import a larger whisper.cpp model for better Spanish accuracy.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>The app has <strong>no <code>INTERNET</code> permission</strong>. There is no account, analytics, advertising, telemetry, remote logging, or automatic upload. Audio, transcripts, reports, modes, and models remain in app-private storage unless you explicitly export them.</p>
+      <p><a href="privacy.html">Read the privacy statement</a></p>
+    </section>
+
+    <section>
+      <h2>Important limitations</h2>
+      <p>Audio Report AI is a <strong>documentation aid, not a medical device</strong>. It does not diagnose, treat, cure, or prevent any condition and does not replace professional judgement. Generated reports are drafts and must be reviewed, corrected, and approved by a qualified person.</p>
+      <p class="muted">Version 0.1.0 does not yet include PDF export or richer report editing. The final ASR engine decision and physical-device M0 validation remain open.</p>
+    </section>
+
+    <section>
+      <h2>Support and licenses</h2>
+      <p><a href="https://github.com/isasio/audio-report-ai-android/blob/master/FAQ.md">Troubleshooting / FAQ</a> · <a href="https://github.com/isasio/audio-report-ai-android/issues">Report an issue</a> · <a href="THIRD_PARTY_NOTICES.txt">Third-party notices</a> · <a href="LICENSES">License texts</a></p>
+      <p class="muted">Never attach audio, transcripts, reports, patient names, or other clinical data to an issue.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="https://github.com/isasio/audio-report-ai-android">GitHub repository</a>
+      <a href="https://github.com/isasio/audio-report-ai-android/releases/latest">Latest release</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/isasio/audio-report-ai-android/blob/master/FAQ.md">FAQ</a>
+      <p>Audio Report AI for Android · local-first documentation aid · not a medical device.</p>
+    </div>
+  </footer>
+</body>
+</html>
