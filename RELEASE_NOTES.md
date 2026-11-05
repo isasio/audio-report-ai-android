@@ -11,7 +11,7 @@ Self-contained Android APK with the on-device models included:
 - Added an effective-prompt preview in the report screen.
 - Added multipage PDF export for reports and transcripts.
 - Improved prompt structure to prevent task/transcript meta commentary.
-- Distribution is GitHub Releases only; no Play Store build.
+- Distribution is GitHub Releases only.
 
 ## Install
 

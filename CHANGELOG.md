@@ -22,8 +22,7 @@ All notable user-visible changes are recorded here.
 
 ### Changed
 
-- Distribution is GitHub Releases only; Play Store, AAB, Play Asset Delivery, and
-  Play App Signing were removed from the release process.
+- Distribution is GitHub Releases only.
 - Reworked the LFM3 prompt into explicit mode, length, section-content, and
   schema blocks so writing modes and report lengths affect generated output.
 - Added per-section meaning to prevent task/transcript meta commentary.
