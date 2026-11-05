@@ -4,10 +4,21 @@ All notable user-visible changes are recorded here.
 
 ## [Unreleased]
 
+### Planned
+
+- Physical-device M0 validation and documented device requirements
+- Recommended whisper model for Spanish quality
+- Audio focus/interruption handling
+- Report editing and regeneration controls
+- Release automation and CI checks
+
+## [0.2.0] — 2026-11-05
+
 ### Added
 
 - PDF export for reports and transcripts: A4 multipage layout, metadata,
   draft/approved banner, sections, evidence, page numbers, and SAF destination.
+- Effective LFM3 prompt preview in the report screen.
 
 ### Changed
 
@@ -16,19 +27,11 @@ All notable user-visible changes are recorded here.
 - Reworked the LFM3 prompt into explicit mode, length, section-content, and
   schema blocks so writing modes and report lengths affect generated output.
 - Added per-section meaning to prevent task/transcript meta commentary.
-- Added an effective-prompt preview in the report screen.
 - Increased short/normal/long body and output budgets; extensive was capped at
   1,000 characters because llama.cpp rejected a 1,400-character repetition.
 - Removed the fixed 15-word section limit that conflicted with long/extensive
   modes.
-
-### Planned
-
-- Physical-device M0 validation and documented device requirements
-- Recommended whisper model for Spanish quality
-- Audio focus/interruption handling
-- Report editing and regeneration controls
-- Release automation and CI checks
+- Bumped to versionCode 2.
 
 ## [0.1.0] — 2026-10-30
 

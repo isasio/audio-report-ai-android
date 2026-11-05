@@ -62,13 +62,13 @@ sha256sum -c SHA256SUMS.txt
 Expected current SHA-256:
 
 ```text
-13da879f0af10e9a850100e59cb421869a99818c8a30daabe4c1fe544a0bdcac
+c2951acd7137aaf338d485475f191852a86e72307266c1a889c0b17ed9be8b01
 ```
 
 On Windows PowerShell:
 
 ```powershell
-Get-FileHash .\audio-report-ai-0.1.0-bundled.apk -Algorithm SHA256
+Get-FileHash .\audio-report-ai-0.2.0-bundled.apk -Algorithm SHA256
 ```
 
 ## Transcription quality is poor
@@ -124,10 +124,11 @@ Include the app version, Android version, device model, and steps to reproduce.
 data.** Use synthetic examples. For sensitive details, describe the problem
 without the content.
 
-## Why is PDF export not available?
+## What export formats are available?
 
-PDF and richer report editing are planned but not part of 0.1.0. Current export
-formats are TXT and JSON.
+Transcripts and reports can be copied or exported as TXT, JSON, or PDF through
+the Android system file picker. PDFs are A4 multipage documents with metadata,
+sections, evidence, and page numbers. Richer report editing is still planned.
 
 ## License questions
 

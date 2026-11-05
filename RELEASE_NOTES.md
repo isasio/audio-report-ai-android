@@ -1,12 +1,17 @@
-# Audio Report AI 0.1.0 — bundled offline build
-
-Website: https://isasio.github.io/audio-report-ai-android/  
-Privacy policy: https://isasio.github.io/audio-report-ai-android/privacy.html  
+# Audio Report AI 0.2.0 — bundled offline build
 
 Self-contained Android APK with the on-device models included:
 
 - LFM3-1.7B QAD Q4_0 GGUF for report drafting
 - whisper tiny GGML model for transcription
+
+## What changed
+
+- Report writing modes and lengths now explicitly drive the LFM3 prompt.
+- Added an effective-prompt preview in the report screen.
+- Added multipage PDF export for reports and transcripts.
+- Improved prompt structure to prevent task/transcript meta commentary.
+- Distribution is GitHub Releases only; no Play Store build.
 
 ## Install
 
@@ -33,6 +38,6 @@ explicitly export through the system file picker.
   limited. You can import a better whisper.cpp model from device storage.
 - LFM3 is distributed under the LFM Open License v1.0, including its
   commercial-use threshold. See `THIRD_PARTY_NOTICES.txt` and the license files
-  in `LICENSES/`.
+  in `licenses/`.
 - The APK is signed with the project GitHub release key. Uninstall any older
   build signed with a different key before installing this APK.

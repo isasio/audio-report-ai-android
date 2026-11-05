@@ -15,7 +15,7 @@ local LFM3 model.
 
 **[Download the latest APK](https://github.com/isasio/audio-report-ai-android/releases/latest)**
 
-- Version: **0.1.0**
+- Version: **0.2.0**
 - Package: `com.audioreportai.app`
 - Size: **~1.1 GB**
 - Android 10 or newer
@@ -24,7 +24,7 @@ local LFM3 model.
 SHA-256:
 
 ```text
-13da879f0af10e9a850100e59cb421869a99818c8a30daabe4c1fe544a0bdcac
+c2951acd7137aaf338d485475f191852a86e72307266c1a889c0b17ed9be8b01
 ```
 
 ## What it does
@@ -40,7 +40,8 @@ SHA-256:
 - Keeps reports as drafts until a human explicitly approves them
 - Supports short, normal, long, and extensive report lengths
 - Includes formal, clinical, executive brief, veterinary SOAP, and saved custom modes
-- Exports transcripts and reports as TXT or JSON through the Android file picker
+- Exports transcripts and reports as TXT, JSON, or PDF through the Android file picker
+- Shows the effective LFM3 prompt for the selected mode and length
 
 ## Bundled models
 

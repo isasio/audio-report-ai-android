@@ -1,1 +1,1 @@
-13da879f0af10e9a850100e59cb421869a99818c8a30daabe4c1fe544a0bdcac  audio-report-ai-0.1.0-bundled.apk
+c2951acd7137aaf338d485475f191852a86e72307266c1a889c0b17ed9be8b01  audio-report-ai-0.2.0-bundled.apk
