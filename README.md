@@ -1,6 +1,6 @@
 # Audio Report AI for Android
 
-A local-first Android app for recording or importing conversations, transcribing
+A local Android app for recording or importing conversations, transcribing
 them on-device, reviewing the transcript, and drafting structured reports with a
 local LFM3 model.
 
@@ -62,7 +62,7 @@ device storage for better quality.
 
 ## Screenshots
 
-Synthetic demo data; no patient information.
+Synthetic demo data.
 
 | Sessions | Transcript |
 | --- | --- |
@@ -120,8 +120,6 @@ See [PRIVACY.md](PRIVACY.md) for details.
 Generated reports are drafts and must be reviewed,
 corrected, and explicitly approved by a qualified person before use.
 
-This is a 0.1.0 build. PDF export, richer report editing, and the final ASR
-engine decision are not included yet.
 
 ## Licenses
 
@@ -145,4 +143,4 @@ For support, open an issue in this repository:
 
 https://github.com/isasio/audio-report-ai-android/issues
 
-Never attach audio, transcripts, reports, patient names, or other clinical data.
+or email me: ig.suarezmartin@gmail.com
