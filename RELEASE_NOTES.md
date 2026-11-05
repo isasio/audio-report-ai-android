@@ -1,5 +1,8 @@
 # Audio Report AI 0.1.0 — bundled offline build
 
+Website: https://isasio.github.io/audio-report-ai-android/  
+Privacy policy: https://isasio.github.io/audio-report-ai-android/privacy.html  
+
 Self-contained Android APK with the on-device models included:
 
 - LFM3-1.7B QAD Q4_0 GGUF for report drafting
